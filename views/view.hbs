@@ -1,0 +1,26 @@
+<h1>Lunabotics Database</h1><br>
+
+<table style="width:100%">
+  <tr>
+  	<th bgcolor="#EEE8AA" style="width: 3%">#</th>
+    <th bgcolor="#EEE8AA">FIRST NAME</th>
+    <th bgcolor="#EEE8AA">LAST NAME</th> 
+    <th bgcolor="#EEE8AA">PUID</th>
+    <th bgcolor="#EEE8AA">EMAIL</th>
+    <th bgcolor="#EEE8AA">SUBTEAM</th>
+  </tr>
+  {{#each memberlist}}
+  	<tr>
+  		<td>{{@index}}</td>
+  		<td>{{first}}</td>
+  		<td>{{last}}</td>
+  		<td><a href='/members/{{puid}}'>{{puid}}</a></td>
+  		<td>{{email}}</td>
+  		<td>{{subteam}}</td>
+  	</tr>
+  {{/each}}
+</table>
+
+
+
+

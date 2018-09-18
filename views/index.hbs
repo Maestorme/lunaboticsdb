@@ -1,0 +1,19 @@
+<h1>Lunabotics Database</h1><br>
+{{#if first}}
+<h2>{{first}} {{last}} checked in at {{check_in_time}}!</h2>
+{{/if}}
+
+<form action='/submit-id' method='post'>
+	<div id = "usernamediv" class='input empty'>
+		<label for='puid'>PUID</label>
+		<input type='text' id='puid' name='puid' autofocus="autofocus">
+	</div>
+	<button type='submit'>Submit</button>
+</form>
+
+<a href='add' class='link'>Add New Member</a><br>
+<a href='view' class='link'>View All Members</a>
+
+<script>
+window.history.pushState("", "", '/');
+</script>

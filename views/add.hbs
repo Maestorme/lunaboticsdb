@@ -1,0 +1,46 @@
+<h1>Add New Member</h1><br>
+<form action = '/add-new' method='post'>
+	
+	<div id = "puid" class='input empty'>
+		<label for='puid'>PUID</label>
+		<input type='text' id='puid' name='puid'>
+		
+	</div>
+	<div id = "email" class='input empty'>
+		<label for='email'>E-mail</label>
+		<input type='email' id='email' name='email'>
+		
+	</div>
+	<div id = "fname" class='input empty'>
+		<label for='firstname'>First Name</label>
+		<input type='text' id='firstname' name='firstname'>
+		
+	</div>
+	<div id = "lname" class='input empty'>
+		<label for='lastname'>Last Name</label>
+		<input type='text' id='lastname' name='lastname'>
+		
+	</div>
+
+	<div id = "subteam" class='input empty'>
+		<label for='subteam'>Subteam</label>
+		<input type='text' id='subteam' name='subteam'>
+		
+	</div>
+	
+	<button type = 'add-new' id='submitButton'>Add-New</button>
+</form>
+
+<a href='/' class='link'>Back</a>
+
+
+<script>
+	$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script>
